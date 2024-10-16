@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card">
+            <div class="outside">
+            </div>
+            <div class="inside">
+                <img src="cakegif.gif"/>
+                <h3>Every year is a new opportunity to become a better version of yourself</h3>
+            </div>
+        </div>
+
+        <button class="next" id="next-btn">next</button>
+
+        <div class="block">
+            <div class="frames frame1">
+                <img src="images (1).jpeg" alt="">
+                <p>Divia Alya</p>
+            </div>
+            <div class="frames frame2">
+                <img src="images (2).jpeg" alt="">
+                <p>Happy Truning a year old! Keep doing good ti everyone around you.
+                </p>
+            </div>
+            <div class="frames frame3">
+                <img src="images.jpeg" alt="">
+                <p>May God bless you on your birthday, and always</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Get the Next button and card elements
+const nextBtn = document.getElementById('next-btn');
+const card = document.getElementById('card');
+
+// Add an event listener to the Next button
+nextBtn.addEventListener('click', () => {
+  // Toggle the flipped class on the card element
+  card.classList.toggle('flipped');
+});
+    </script>
+</body>
+</html>
